@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            color: blue;
+            --seccolor:rgb(147, 147, 255);
+            --defpad:34px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color:red;
+        }
+        .container{
+            background-color:var(--color)
+        }
+        ul li{
+            list-style: none;
+            padding:var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        li{
+            /*--color: blue;*/
+            /*background-color: var(--color , rgb(5, 234, 255));*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Hello</li>
+            <li>Hello1</li>
+            <li>Hello2</li>
+            <li>Hello3</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repudiandae pariatur laborum qui. Dignissimos, quo aspernatur harum nulla debitis facilis veritatis quasi dolorem officia fugit omnis optio architecto, deleniti corporis in accusamus quaerat molestias?
+    </div>
+    
+</body>
+</html>
